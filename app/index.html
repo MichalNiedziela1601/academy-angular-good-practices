@@ -9,12 +9,26 @@
 
 <body ng-app="app">
 <ng-view></ng-view>
+
+
+<!-- Libraries -->
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
-<script src="js/app.js"></script>
-<script src="js/services.js"></script>
-<script src="js/directives.js"></script>
-<script src="js/filters.js"></script>
-<script src="js/controllers.js"></script>
+
+<!-- Modules and config-->
+<script src="app.module.js"></script>
+<script src="app.config.js"></script>
+
+<!-- Controllers -->
+<script src="drivers/drivers.controllers.js"></script>
+<script src="driver/driver.controller.js"></script>
+<!-- Services -->
+<script src="services/drivers-api.factory.js"></script>
+<!-- Directives -->
+<script src="directives/driver-details.directives.js"></script>
+
+<!-- Filters-->
+<script src="filters/search.filters.js"></script>
+
 </body>
 </html>
