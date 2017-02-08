@@ -10,12 +10,6 @@
 
         /////////////
 
-        function searchFilter(driver)
-        {
-            var re = new RegExp(ctrl.nameFilter, 'i');
-            return !ctrl.nameFilter || re.test(driver.Driver.givenName) || re.test(driver.Driver.familyName);
-        }
-
         function getDrivers()
         {
             DriverAPIFactory.getDrivers().then(function (response)
@@ -32,7 +26,6 @@
         ///////////////
         init();
 
-        ctrl.searchFilter = searchFilter;
     }
 
     angular.module('app')
